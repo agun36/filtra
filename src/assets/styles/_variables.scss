@@ -1,0 +1,138 @@
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/variables-dark";
+@import "../../../node_modules/bootstrap/scss/mixins";
+// @import "../../../node_modules/bootstrap/scss/utilities";
+// @import 'defaults';
+// Import your fonts here
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+// Colors
+
+// Primary
+
+$bg-000: #212226;
+$bg-100: #2A095E;
+$bg-200: #F2F2F2;
+$bg-300: #F7F2FF;
+$bg-400: #4C11AB;
+$bg-500: #3A2E4D;
+$bg-550: #5D5FEF;
+
+$bg-600: #8C80AD;
+$bg-700: #C9C4D9;
+$bg-800: #504766;
+
+
+$white-000: #FFFFFF;
+
+$box-shadow-100: 0px 4px 12px -1px #4C11AB1A;
+$box-shadow-200: 0px 4px 12px -1px #4C11AB1A;
+
+$font-family-regular: 'GT Walsheim Pro Regular', sans-serif;
+$font-family-bold: 'GT Walsheim Pro Bold', sans-serif;
+
+
+
+
+
+
+// Typography ### Body Copy 
+
+
+$Font-sizeinputs: 32px;
+$fontweights: (
+    'regular': 400,
+    'bold': 700,
+    'extra-bold': 800,
+);
+
+$custom-colors: (
+    'bg-000': $bg-000,
+    'bg-100': $bg-100,
+    'bg-200': $bg-200,
+    'bg-300': $bg-300,
+    'bg-400': $bg-400,
+    'bg-500': $bg-500,
+    'bg-550': $bg-550,
+    'bg-600': $bg-600,
+    'bg-700': $bg-700,
+    'bg-800': $bg-800,
+    'white-000': $white-000,
+);
+
+// $custom-breakpoints: (
+//     xs: 0,
+//     sm: 576px,
+//     md: 767px,
+//     lg: 1024px,
+//     xl: 1200px,
+//     xxl: 1300px
+// );
+
+
+
+
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+// $grid-breakpoints: map-merge($grid-breakpoints, $custom-breakpoints);
+
+$spacers: (
+    0: 0,
+    1: 1rem,
+    2: 1.3rem,
+    3: 1.5rem,
+    4: 1.8rem,
+    "4_5": 2rem,
+    5: 2.5rem,
+    "5_5": 3.6rem,
+    6: 6rem,
+    7: 7rem,
+    8: 8rem,
+    9: 9rem,
+    10: 12rem,
+);
+
+@each $key, $value in $spacers {
+    .p-#{$key} {
+        padding: $value;
+    }
+
+    .pt-#{$key} {
+        padding-top: $value;
+    }
+
+    .pr-#{$key} {
+        padding-right: $value;
+    }
+
+    .pb-#{$key} {
+        padding-bottom: $value;
+    }
+
+    .pl-#{$key} {
+        padding-left: $value;
+    }
+
+    .m-#{$key} {
+        margin: $value;
+    }
+
+    .mt-#{$key} {
+        margin-top: $value;
+    }
+
+    .mr-#{$key} {
+        margin-right: $value;
+    }
+
+    .mb-#{$key} {
+        margin-bottom: $value;
+    }
+
+    .ml-#{$key} {
+        margin-left: $value;
+    }
+}

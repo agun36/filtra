@@ -1,0 +1,147 @@
+@import "./variables";
+
+html {
+    // This means 1rem = 10px
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    @media (max-width: 900px) {
+        font-size: 59.5%;
+    }
+
+    @media (max-width: 700px) {
+        font-size: 55.5%;
+    }
+
+    height: 100%;
+}
+
+html::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: $bg-400;
+    border-radius: 5rem;
+}
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: $font-family-regular;
+    src: local('GT Walsheim Pro Regular'), local('GTWalsheimProRegular'), url('GTWalsheimProRegular.woff2') format('woff2'), url('GTWalsheimProRegular.woff') format('woff'), url('GTWalsheimProRegular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: $font-family-bold;
+    src: local('GT Walsheim Pro Bold'), local('GTWalsheimProBold'), url('GTWalsheimProBold.woff2') format('woff2'), url('GTWalsheimProBold.woff') format('woff'), url('GTWalsheimProBold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    height: 100%;
+    overflow-x: hidden;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    font-family: $font-family-regular;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+    @include media-breakpoint-up($breakpoint) {
+        .d-#{$breakpoint}-none {
+            display: none !important;
+        }
+
+        .d-#{$breakpoint}-block {
+            display: block !important;
+        }
+    }
+}
+
+
+
+@each $name, $weight in $fontweights {
+    .#{$name} {
+        font-weight: $weight;
+    }
+}
+
+@media (min-width: 968px) {
+    .w-md-auto {
+        width: auto !important;
+    }
+
+    .w-sm-wide {
+        width: 100% !important;
+    }
+}
+
+.btn-outline-bg-200 {
+    @include button-outline-variant($bg-400, $bg-200 , $bg-100);
+    // outline: 2px solid blue;
+}
+
+
+
+
+
+.para-lg {
+    @include media-breakpoint-up(lg) {
+        font-size: 1.8rem; // Your custom value for medium screens and up
+    }
+}
+
+.para-md {
+    @include media-breakpoint-up(md) {
+        font-size: 1.6rem; // Your custom value for medium screens and up
+    }
+}
+
+.para-fs-sm {
+    @include media-breakpoint-down(sm) {
+        font-size: 1.2rem; // Your custom value for small screens and below
+    }
+}
+
+.para-fs-xs {
+    @include media-breakpoint-down(xs) {
+        font-size: 1rem; // Your custom value for small screens and below
+    }
+}
+
+
+
+.titles-fs-md {
+    @include media-breakpoint-up(md) {
+        font-size: 2.4rem; // Your custom value for medium screens and up
+    }
+}
+
+.titles-fs-sm {
+    @include media-breakpoint-down(sm) {
+        font-size: 1.8rem; // Your custom value for small screens and below
+    }
+}
+
+.titles-fs-xs {
+    @include media-breakpoint-down(xs) {
+        font-size: 1.6rem; // Your custom value for small screens and below
+    }
+}

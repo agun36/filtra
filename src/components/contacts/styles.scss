@@ -1,0 +1,56 @@
+@import '@/assets/styles/variables';
+
+.contacts {
+    padding: 12rem;
+    border-radius: 2rem;
+    position: relative;
+    overflow: hidden;
+
+    ::after {
+        content: "";
+        position: absolute;
+        width: 28.7rem;
+        height: 28.7rem;
+        top: -30rem;
+        left: -20.3rem;
+        border-radius: 0rem 0rem 3.2rem 0rem;
+        opacity: 30%;
+        border: .1rem solid $white;
+    }
+
+    ::before {
+        content: "";
+        position: absolute;
+        width: 28.7rem;
+        height: 28.7rem;
+        top: 46.5rem;
+        left: 85%;
+        gap: 0px;
+        border-radius: 3.2rem 0rem 0rem 0rem;
+        opacity: 30%;
+        border: .1rem solid $white;
+
+        @media screen and (min-width: 650px) {
+
+            top: 33.5rem;
+        }
+    }
+
+    .modal-content {
+        a {
+            gap: 10px;
+            border-radius: .6rem;
+            font-size: 3rem;
+            box-shadow: 0rem .4rem 1.2rem -1rem #4C11AB1A;
+            // On click
+            // Open overlay: "Contact Sales Modal";
+            // Animate: Move in Bottom;
+            // Spring: { mass: 1, stiffness: 180, damping: 30 };
+        }
+
+
+
+    }
+
+
+}

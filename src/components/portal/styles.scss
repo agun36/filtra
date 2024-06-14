@@ -1,0 +1,23 @@
+.portal {
+    padding-block: 3rem;
+
+    @media screen and (min-width: 768px) {
+        padding-block: 8rem;
+
+    }
+
+    .portal-title {
+        margin-block: 12rem;
+    }
+
+    .card {
+        box-shadow: 0px 4px 16px 0px #2A095E0D;
+        border: 2rem solid #FFFFFF;
+        width: 28rem !important;
+        border-radius: 1.2rem;
+        opacity: 1px;
+        column-gap: 1rem !important;
+        margin: .4rem;
+
+    }
+}

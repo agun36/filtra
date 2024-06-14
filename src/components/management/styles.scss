@@ -1,0 +1,20 @@
+.management {
+    margin: 12rem 0rem 12rem 0rem;
+
+    img {
+        width: 93.6rem;
+        margin: 0rem 0rem 0rem 0rem;
+    }
+
+    .management-content {
+        //styleName: Paragraph/Body Text - lg (16px);
+        font-weight: 400;
+        line-height: 2.4rem;
+        text-align: center;
+
+        // padding: 12rem 12rem;
+        .management-content-text {
+            padding: 12rem 12rem;
+        }
+    }
+}

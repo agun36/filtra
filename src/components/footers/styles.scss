@@ -1,0 +1,75 @@
+footer {
+    border-top: 1px solid #1E1B2612;
+    padding: 2.1rem 0rem 2.2rem 0rem;
+    position: relative;
+
+    .btn-fixed {
+        position: fixed;
+        bottom: 20px; // Distance from the bottom of the viewport
+        right: 20px; // Distance from the right of the viewport
+        z-index: 999; // Ensure it's above other content
+        border-radius: 2rem;
+    }
+
+    .modal-dialog {
+        position: absolute;
+        width: 100%;
+        right: 0;
+        bottom: 0;
+    }
+
+    .modal-header {
+        position: relative;
+
+        .btn-close-white {
+            position: absolute !important;
+            width: 4rem;
+            height: 4rem;
+            border-radius: 1.6rem;
+
+            top: 2rem !important;
+            right: 2rem !important;
+            // left: -12rem;
+            /* bottom: 29rem; */
+            right: 0;
+        }
+    }
+
+    .modal-body {
+        font-family: Euclid Circular A;
+        position: absolute;
+        border-radius: 1.5rem;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+        width: 37.2rem;
+        height: 19rem;
+
+
+
+        h3 {
+            font-family: Euclid Circular A;
+            font-size: 1.6rem;
+            font-weight: 500;
+            line-height: 2.2rem;
+            letter-spacing: -0.015em;
+
+        }
+
+        menu {
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 2rem;
+            letter-spacing: -0.015em;
+        }
+    }
+
+    .modal-content {
+        background-color: transparent !important;
+    }
+
+
+    small {
+        margin-top: auto;
+    }
+}
