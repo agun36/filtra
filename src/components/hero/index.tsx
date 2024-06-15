@@ -10,7 +10,7 @@ export const Header = () => {
 
 
     return (
-        <header className="header bg-bg-100 min-vh-100">
+        <header className="header bg-bg-100 min-vh-100 ">
             <div className="container container-fluid ">
 
                 <div className="border-bottom py-4">
@@ -21,7 +21,7 @@ export const Header = () => {
                     <div className="header-content-img">
                         <img src={dataImg.herobg2} alt="displaying person typing" className="img-fluid" />
                     </div>
-                    <div className="header-content-para bg-bg-200  ">
+                    <div className="header-content-para bg-bg-300  ">
                         <div className="header-content-para-text">
                             <div className="mb-5 row">
                                 <h1 className="text-bg-100 ">Streamline Your Workflow with our advanced Electronic Document Management Solution.</h1>

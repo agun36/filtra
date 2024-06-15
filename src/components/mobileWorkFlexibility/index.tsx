@@ -4,7 +4,7 @@ import mobileWork from '@/assets/images/desktop.svg';
 export const MobileWorkFlexibility = () => {
     return (
         <section className="mobile-work  p-8">
-            <div className="mobile-work-content row row-col-1 d-flex align-items-center mx-auto py-8">
+            <div className="mobile-work-content row row-col-1 d-flex flex-wrap align-items-center mx-auto py-8">
                 <div className="mobile-work-content-text col-md-4 offset-0 offset-md-2 mb-5">
                     <h1 className='text-bg-100 mb-5 '>
                         Work on the go at your convenience
