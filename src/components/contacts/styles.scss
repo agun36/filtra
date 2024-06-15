@@ -1,10 +1,14 @@
 @import '@/assets/styles/variables';
 
 .contacts {
-    padding: 12rem;
+    padding: 10rem 0rem 10rem 0rem;
     border-radius: 2rem;
     position: relative;
     overflow: hidden;
+
+    @media screen and (max-width: 1080px) {
+        padding: 0rem 0rem 0rem 0rem;
+    }
 
     ::after {
         content: "";
@@ -12,7 +16,7 @@
         width: 28.7rem;
         height: 28.7rem;
         top: -30rem;
-        left: -20.3rem;
+        left: -10.3rem;
         border-radius: 0rem 0rem 3.2rem 0rem;
         opacity: 30%;
         border: .1rem solid $white;
@@ -23,16 +27,16 @@
         position: absolute;
         width: 28.7rem;
         height: 28.7rem;
-        top: 80.5rem;
+        top: 20.5rem;
         left: 85%;
-        gap: 0px;
         border-radius: 3.2rem 0rem 0rem 0rem;
         // opacity: 30%;
         border: .1rem solid $white;
 
-        @media screen and (min-width: 650px) {
-
-            top: 30.5rem;
+        @media screen and (max-width: 1080px) {
+            height: 10.7rem;
+            left: 13rem;
+            top: 55.5rem;
         }
     }
 
