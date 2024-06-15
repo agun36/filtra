@@ -19,20 +19,20 @@
     }
 
     ::before {
-        content: "";
+        content: " ";
         position: absolute;
         width: 28.7rem;
         height: 28.7rem;
-        top: 46.5rem;
+        top: 80.5rem;
         left: 85%;
         gap: 0px;
         border-radius: 3.2rem 0rem 0rem 0rem;
-        opacity: 30%;
+        // opacity: 30%;
         border: .1rem solid $white;
 
         @media screen and (min-width: 650px) {
 
-            top: 33.5rem;
+            top: 30.5rem;
         }
     }
 
