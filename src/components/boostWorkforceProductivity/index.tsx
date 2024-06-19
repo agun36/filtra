@@ -5,8 +5,8 @@ import './styles.scss'
 export const BoostWorkforceProductivity = () => {
     return (
         <section className="boost-workforce  row flex-column">
-            <div className='boost-workforce-header col-10 col-md-7 col-lg-4 mx-auto text-center'>
-                <h1 className="text-bg-100">Supercharge your Workforce Productivity</h1>
+            <div className='boost-workforce-header    '>
+                <h1 className="text-bg-100 col-9  col-lg-4 col-md-7 mx-auto text-center">Supercharge your Workforce Productivity</h1>
             </div>
             <div className="boost-workforce-content mx-auto row row-cols-1 row-cols-md-4 gx-0 gap-2 justify-content-center">
 

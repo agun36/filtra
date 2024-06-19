@@ -44,12 +44,16 @@ main {
         }
 
         .productive-text {
-            h2 {
+            h1 {
                 //styleName: Header/Heading H2 - 32px;
                 font-weight: 700;
                 line-height: 4.16rem;
-                text-align: left;
+                font-size: 1.8rem;
 
+                @media screen and (min-width: 768px) {
+                    font-size: 3.2rem;
+
+                }
             }
 
             p {
@@ -64,12 +68,16 @@ main {
     .pitfall {
         margin: 12rem 0rem 12rem 0rem;
 
-        h3 {
+        h1 {
             //styleName: Header/Heading H2 - 32px;
             font-weight: 700;
             line-height: 4.16rem;
-            text-align: center;
-            margin-bottom: 2.4rem;
+            font-size: 1.8rem;
+
+            @media screen and (min-width: 768px) {
+                font-size: 3.2rem;
+
+            }
         }
 
         p {

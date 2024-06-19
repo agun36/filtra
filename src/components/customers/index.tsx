@@ -18,7 +18,7 @@ export const Customer = () => {
     return (
         <section className='customers container container-fluid '>
             <div className='ml-4 mb-8'>
-                <h1 className='text-bg-100 col-md-4 mb-4'>
+                <h1 className='text-bg-100 col-md-4 col-7 mb-4'>
                     Whatever your need is, we’ve got it covered
                 </h1>
                 <p className='text-bg-500 col-md-5'>Filetra provides flexible deployment options, either on-premises or in public clouds, and is delivered as a comprehensive suite that equips businesses with comprehensive capabilities.</p>

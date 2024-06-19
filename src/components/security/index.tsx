@@ -5,7 +5,7 @@ import './styles.scss'
 export const Security = () => {
     return (
         <section className="security row row-col-2  d-flex justify-content-center gap-5">
-            <div className="security-header text-center mb-5  text-bg-100 col-md-3">
+            <div className="security-header text-center mb-5  text-bg-100 col-8 col-md-3">
                 <h1 className=''>Not to worry, your security is our top priority.</h1>
             </div>
             <div className="security-content row row-col-2  no-padding-right no-padding-left   justify-content-center gx-0 gap-5">

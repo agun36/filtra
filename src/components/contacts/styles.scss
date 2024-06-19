@@ -52,6 +52,17 @@
             // Spring: { mass: 1, stiffness: 180, damping: 30 };
         }
 
+        h1 {
+            //styleName: Header/Heading H2 - 32px;
+            font-weight: 700;
+            line-height: 4.16rem;
+            font-size: 1.8rem;
+
+            @media screen and (min-width: 768px) {
+                font-size: 3.2rem;
+
+            }
+        }
 
 
     }

@@ -5,7 +5,7 @@ import './styles.scss'
 export const Portal = () => {
     return (
         <div className="portal bg-bg-300">
-            <div className="portal-title text-center col-md-3 col-6 mx-auto ">
+            <div className="portal-title text-center col-md-3 col-8 mx-auto ">
                 <h1 className="text-bg-100">Oh yes, there’s more where that came from</h1>
             </div>
 
