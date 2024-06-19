@@ -12,7 +12,7 @@ export const MobileWorkFlexibility = () => {
                     <p className='text-bg-500 '>You can be productive without being physically present in the office. As long as you have an internet-capable smartphone, tablet, or laptop, you can work from anywhere and at any time.</p>
                 </div>
                 <div className='mobile-work-img col-12 col-md-3 offset-0  offset-md-1 my-5'>
-                    <img src={mobileWork} alt="showing the user profile" className='d-none d-sm-none d-md-block d-lg-block' />
+                    <img src={mobileWork} alt="showing the user profile" className='d-none  d-md-block d-lg-none' />
                 </div>
             </div>
         </section>

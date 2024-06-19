@@ -6,7 +6,7 @@ export const Track = () => {
         <main className='contents container-md container-fluid row mx-auto  justify-content-center align-items-center '>
             <section className="track-contents   ">
                 <div className='text-center col-8 mx-auto'>
-                    <h1 className="text-bg-100 my-5 titles-fs-md titles-fs-sm">Keeping tabs on documents doesn’t have to be so tedious.</h1>
+                    <h1 className="text-bg-100 my-5 titles-fs-md titles-fs-sm col-md-6 mx-auto">Keeping tabs on documents doesn’t have to be so tedious.</h1>
                     <p className="text-bg-700 para-fs-md para-fs-sm">Managing paper-based workflow can be tedious and expensive. It makes it difficult to create, process, or archive documents, which can complicate the document management process as a whole.</p>
                 </div>
             </section>
